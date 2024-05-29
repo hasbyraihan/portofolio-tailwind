@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 index = 0;
             }
             updateCarousel();
-        }, 3000); // Change slide every 3 seconds
+        }, 5000); // Change slide every 3 seconds
     }
 
     // Start the automatic carousel when the DOM is loaded
@@ -79,6 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const biodata = document.getElementById('Biodata');
     const gambar = document.getElementById('Gambar');
     const quotes = document.getElementById('quotes');
+    const about = document.getElementById('about');
 
     // Function to check if an element is in viewport
     function isElementInViewport(el) {
@@ -101,6 +102,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         if (isElementInViewport(quotes)) {
             quotes.classList.add('animate-from-top');
+        }
+        if (isElementInViewport(about)) {
+            about.classList.add('animate-from-left');
         }
     }
 
